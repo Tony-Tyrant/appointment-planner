@@ -34,6 +34,7 @@ export const ContactsPage = ({data, addNew}) => {
     if(data.every(contact => contact.name !== name)) {
       setCheckName(true);
     } else {setCheckName(false);}
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [name])
 
   return (
